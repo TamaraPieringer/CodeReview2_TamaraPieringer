@@ -1,0 +1,47 @@
+/*body * {
+	border: 1px solid;
+	margin: 5px 5px 5px;
+	padding: 5px 5px 5px;
+	position: relative;*/
+
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .news {
+         margin: 25%;
+         width: 50%;
+    }
+}
+#container {
+	display: flex;
+	/*justify-content: center;*/
+	flex-flow: column;
+}
+
+#players {
+	display: inline-flex;
+	justify-content: center;
+}
+.gladiators {
+	display: inline-flex;
+	font-style: sans-serif;
+	justify-content: center;
+	/*flex-flow: row;*/
+}
+.gladiatorLeft {
+	justify-content: flex-start;
+	background-color: green;
+	}
+
+.gladiatorRight {
+	justify-content: flex-end;
+	background-color: red;
+
+}
+
+footer {
+	display: inline-flex;
+	justify-content: center;
+}
+

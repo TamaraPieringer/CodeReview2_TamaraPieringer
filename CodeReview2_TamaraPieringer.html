@@ -3,52 +3,68 @@
 <head>
 	<title>Roll of the dice</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="">
+	<!-- <link rel="stylesheet" type="text/css" href="CodeReview2_TamaraPieringer.css"> -->
+	<script type="text/javascript" src="CodeReview2_TamaraPieringer.js"></script>
 </head>
 <body onload="background()">
+
 	<!-- dynamischer Background -->
 	
-<header>
-	
-</header>
+	<div id=container>
 
-<div>
-	
-</div>
+		<header id=players>
 
-<div>
-	
-</div>
+			<button onclick="wanttoplayOne()">Do you want to play?</button>
+			<h2 id=spielStart1></h2>
 
+			<p>against</p>
 
-<footer>
-	
-</footer>
+			<button onclick="wanttoplayTwo()">Do you want to play?</button>
+			<h2 id=spielStart2></h2>
+			
+		</header>
+		
+		<div class=gladiators>
 
+			<div class=gladiatorLeft>
 
+				
+				<div id="dice1" class="dice">0</div>
+				<button onclick="rolldiceOne()">Roll Dice</button>
+				<h2 id="statusOne" style="clear left"></h2>
 
+			</div>
 
+			<div class="gladiatorRight">
+				<div id="dice1" class="dice">0</div>
+				<button onclick="rolldiceOne()">Roll Dice</button>
+				<h2 id="statusOne" style="clear left"></h2>
+			</div>
+			
+		</div>
 
+		
+		<footer>
 
+			<div id="ratingpoints">
+				<p>10.345 Ratings</p>
+			</div>
 
+			<div id=stars>
+				<span>★</span>
+				<span>★</span>
+				<span>★</span>
+				<span>★</span>
+				<span>☆</span>
+			</div>
 
+			<div id="copyright">
+				<p>All Rights reserved &copy; Tamara Pieringer</p>	
+			</div>
 
+		</footer>
 
+	</div>
 
-
-	<script type="text/javascript">
-
-	function background () {
-		var Color1 = Math.floor((Math.random ())*255);
-		var Color2 = Math.floor((Math.random ())*255);
-		var Color3 = Math.floor((Math.random ())*255);
-
-		document.body.style.background = "rgb("+Color1+", "+Color2+", "+Color3+")";
-
-		rgb(1, 255, 23)
-	}
-
-	
-</script>
 </body>
 </html>
